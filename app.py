@@ -48,6 +48,7 @@ def handle_message(event):
             alt_text='welcome',
             text='Hai Juga Bro/Sist'
         )
+        line_bot_api.reply_message(event.reply_token, text_message)
 
 
 if __name__ == "__main__":
