@@ -43,7 +43,7 @@ def handle_message(event):
     print("event.message.text", event.message.text)
     if event.message.text == "Hai":
         text_message = TextMessage(
-            type=text
+            type=text,
             text='Hai Juga Bro/Sist'
         )
         line_bot_api.reply_message(event.reply_token, text_message)
